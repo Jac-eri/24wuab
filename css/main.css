@@ -1,6 +1,6 @@
 .menu{
-    height: 100vh;
-    width: 80vw;
+    height: 75vh;
+    width: 50vw;
     background: whitesmoke;
     position: fixed;
     top: 0;
@@ -40,6 +40,7 @@
 
 @media screen and (max-width: 767px){
     .outerGrid1{
+        gap: 10px;
         display: grid;
         grid-template-areas: 
         'pst1'
@@ -51,6 +52,7 @@
 
     .innerGrid1{
         background-color: whitesmoke;
+        border: 5px black solid;
         padding: 5vh 5vw;
         display: grid;
         grid-template-areas:
@@ -79,14 +81,20 @@
 
     .commentButton{
         background-color: blue;
+        padding: 5px;
         grid-area: com;
     }
 
     .resultsButton{
         background-color: blue;
+        padding: 5px;
         grid-area: res;
     }
 
 
+
+}
+
+@media screen and (min-width: 767px){
 
 }
