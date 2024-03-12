@@ -1,10 +1,10 @@
 .menu{
-    height: 75vh;
-    width: 50vw;
+    height: 20vh;
+    width: 100vw;
     background: whitesmoke;
     position: fixed;
     top: 0;
-    left: -90vw;
+    left: -100vw;
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
@@ -56,38 +56,55 @@
         padding: 5vh 5vw;
         display: grid;
         grid-template-areas:
-        'ti''su''pe''ca'
-        'com''com''res''res'
+        'ti su pe ca'
+        'com com res res'
         ;
         grid-template-rows: 10vh 10vh;
-        grid-template-columns: 30vw 20vw 30vw 10vw;
+        grid-template-columns: 30% 20% 30% 10%;
     }
 
     .title{
         grid-area: ti;
+        background-color: none;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
     }
 
     .subject{
         grid-area: su;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
     }
 
     .person{
         grid-area: pe;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
     }
 
     .category{
         grid-area: ca;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
     }
 
     .commentButton{
         background-color: blue;
+        border: 5px black solid;
         padding: 5px;
+        margin: 10px;
         grid-area: com;
     }
 
     .resultsButton{
         background-color: blue;
+        border: 5px black solid;
         padding: 5px;
+        margin: 10px;
         grid-area: res;
     }
 
@@ -96,5 +113,70 @@
 }
 
 @media screen and (min-width: 767px){
+    .outerGrid1{
+        gap: 10px;
+        display: grid;
+        grid-template-areas: 
+        'pst1 pst2'
+        'pst3 pst4'
+        ;
+    }
 
+    .innerGrid1{
+        background-color: whitesmoke;
+        border: 5px black solid;
+        padding: 5vh 5vw;
+        display: grid;
+        grid-template-areas:
+        'ti su pe ca'
+        'com com res res'
+        ;
+        grid-template-rows: 10vh 10vh;
+        grid-template-columns: 30% 20% 30% 10%;
+    }
+
+    .title{
+        grid-area: ti;
+        background-color: none;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
+    }
+
+    .subject{
+        grid-area: su;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
+    }
+
+    .person{
+        grid-area: pe;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
+    }
+
+    .category{
+        grid-area: ca;
+        border: 1px black solid;
+        padding: 5px;
+        margin: 10px
+    }
+
+    .commentButton{
+        background-color: blue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+        grid-area: com;
+    }
+
+    .resultsButton{
+        background-color: blue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+        grid-area: res;
+    }
 }
