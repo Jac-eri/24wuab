@@ -93,7 +93,7 @@
     }
 
     .commentButton{
-        background-color: blue;
+        background-color:lightblue;
         border: 5px black solid;
         padding: 5px;
         margin: 10px;
@@ -101,7 +101,7 @@
     }
 
     .resultsButton{
-        background-color: blue;
+        background-color:lightblue;
         border: 5px black solid;
         padding: 5px;
         margin: 10px;
@@ -137,10 +137,146 @@
     .coursePoints{
         display: flex;
         justify-content: space-evenly;
+        background-color:lightblue; 
         border: 2px black solid;
         padding: 5px;
         margin: 10px;
     }
+
+    .courses{
+        display: grid;
+        grid-template-areas: 
+        'co pts te sa'
+        ;
+    }
+
+    .course{
+        grid-area: co;
+    }
+
+    .points{
+        grid-area: pts;
+    }
+
+    .teacher{
+        grid-area: te;
+    }
+
+    .assessement{
+        grid-area: sa;
+    }
+
+    .coursesArray{
+        display: grid;
+        grid-template-areas: 
+        'onTitle'
+        'on'
+        'onArray'
+        'comTitle'
+        'com'
+        'comArray'
+        'notTitle'
+        'not'
+        'notArray'
+        ;
+        grid-template-columns: 100%;
+    }
+
+    #ongoingCourses{
+        grid-area: on;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #completedCourses{
+        grid-area: com;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #notStartedCourses{
+        grid-area: not;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    .onCo{
+        grid-area: onTitle;
+    }
+
+    .comCo{
+        grid-area: comTitle;
+    }
+
+    .notStCo{
+        grid-area: notTitle;
+    }
+
+    #onArray{
+        grid-area: onArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #comArray{
+        grid-area: comArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #notArray{
+        grid-area: notArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .courses2{
+        display: grid;
+        grid-template-areas: 
+        'c1'
+        'c2'
+        'c3'
+        'c4'
+        'c5'
+        'c6'
+        'c7'
+        'c8'
+        'c9'
+        'c10'
+        ;
+    }
+
+    #course1{grid-area: c1;}
+    #course2{grid-area: c2;}
+    #course3{grid-area: c3;}
+    #course4{grid-area: c4;}
+    #course5{grid-area: c5;}
+    #course6{grid-area: c6;}
+    #course7{grid-area: c7;}
+    #course8{grid-area: c8;}
+    #course9{grid-area: c9;}
+    #course10{grid-area: c10;}
+
+    .courses3{
+        display: grid;
+        grid-template-areas: 
+        'co pts te sa'
+        ;
+    }
+
+    .crs{grid-area: co;}
+    .pts{grid-area: pts;}
+    .tchr{grid-area: te;}
+    .show{grid-area: sa;}
 }
 
 @media screen and (min-width: 767px){
@@ -196,7 +332,7 @@
     }
 
     .commentButton{
-        background-color: blue;
+        background-color:lightblue;
         border: 5px black solid;
         padding: 5px;
         margin: 10px;
@@ -204,10 +340,151 @@
     }
 
     .resultsButton{
-        background-color: blue;
+        background-color:lightblue;
         border: 5px black solid;
         padding: 5px;
         margin: 10px;
         grid-area: res;
     }
+    
+    .coursePoints{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:lightblue;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .courses{
+        display: grid;
+        grid-template-areas: 
+        'co pts te sa'
+        ;
+    }
+
+    .course{
+        grid-area: co;
+    }
+
+    .points{
+        grid-area: pts;
+    }
+
+    .teacher{
+        grid-area: te;
+    }
+
+    .assessement{
+        grid-area: sa;
+    }
+    
+    .coursesArray{
+        display: grid;
+        grid-template-areas: 
+        'onTitle comTitle notTitle'
+        'on com not'
+        'onArray comArray notArray'
+        ;
+        grid-template-columns: 30%;
+    }
+
+    #ongoingCourses{
+        grid-area: on;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #completedCourses{
+        grid-area: com;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #notStartedCourses{
+        grid-area: not;
+        background-color:lightblue;
+        border: 5px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .onCo{
+        grid-area: onTitle;
+        margin: 20px;
+    }
+
+    .comCo{
+        grid-area: comTitle;
+        margin: 20px;
+    }
+
+    .notStCo{
+        grid-area: notTitle;
+        margin: 20px;
+    }
+
+    #onArray{
+        grid-area: onArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #comArray{
+        grid-area: comArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #notArray{
+        grid-area: notArray;
+        border: 2px black solid;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .courses2{
+        display: grid;
+        grid-template-areas: 
+        'c1'
+        'c2'
+        'c3'
+        'c4'
+        'c5'
+        'c6'
+        'c7'
+        'c8'
+        'c9'
+        'c10'
+        ;
+    }
+
+    #course1{grid-area: c1;}
+    #course2{grid-area: c2;}
+    #course3{grid-area: c3;}
+    #course4{grid-area: c4;}
+    #course5{grid-area: c5;}
+    #course6{grid-area: c6;}
+    #course7{grid-area: c7;}
+    #course8{grid-area: c8;}
+    #course9{grid-area: c9;}
+    #course10{grid-area: c10;}
+
+    .courses3{
+        display: grid;
+        grid-template-areas: 
+        'co pts te sa'
+        ;
+    }
+
+    .crs{grid-area: co;}
+    .pts{grid-area: pts;}
+    .tchr{grid-area: te;}
+    .show{grid-area: sa;}
 }
