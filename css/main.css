@@ -38,6 +38,10 @@
     display: block;
 }
 
+ul {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 767px){
     .outerGrid1{
         gap: 10px;
@@ -106,32 +110,6 @@
         padding: 5px;
         margin: 10px;
         grid-area: res;
-    }
-
-    .calendarGrid{
-        display: grid;
-        grid-template-areas:
-        'days'
-        'd1 d2 d3 d4 d5 d6 d7'
-        'd8 d9 d10 d11 d12 d13 d14'
-        'd15 d16 d17 d18 d19 d20 d21'
-        'd22 d23 d24 d25 d26 d27 d28'
-        'd29 d30 d31 d32 d33 d34 d35'
-        ;
-        grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
-        grid-template-columns: 5vh 5vh 5vh 5vh 5vh 5vh;
-        border: 2px black solid;
-        padding: 5px;
-        margin: 10px;
-    }
-
-    .days{
-        grid-area: days;
-        display: flex;
-        justify-content: space-evenly;
-        border: 2px black solid;
-        padding: 5px;
-        margin: 10px;
     }
 
     .coursePoints{
@@ -487,4 +465,74 @@
     .pts{grid-area: pts;}
     .tchr{grid-area: te;}
     .show{grid-area: sa;}
+
+
+    .calendar{
+
+    }
+
+    .month{
+        padding: 30px;
+        background: #688691;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li{
+        color: black;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev{
+        float: left;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .month .next{
+        float: right;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .weekdays{
+        margin: 0;
+        padding: 10px 0;
+        background-color:lightblue;
+        border: 2px black solid;
+      }
+      
+      .weekdays li{
+        display: inline-block;
+        width: 13.6%;
+        color: black;
+        text-align: center;
+      }
+
+      .date{
+        padding: 10px 0;
+        background: #A5B6BB;
+        margin: 0;
+        border: 2px solid black;
+      }
+
+      .date li{
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+        font-size: 15px;
+      }
+
+      .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+      }
 }
