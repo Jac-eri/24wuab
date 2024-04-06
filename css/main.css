@@ -1,6 +1,6 @@
 .menu{
-    height: 20vh;
-    width: 100vw;
+    height: 100vh;
+    width: 20vw;
     background: whitesmoke;
     position: fixed;
     top: 0;
@@ -249,12 +249,171 @@ ul {
         grid-template-areas: 
         'co pts te sa'
         ;
+        grid-template-columns: 22% 20% 32% 26%;
     }
 
     .crs{grid-area: co;}
     .pts{grid-area: pts;}
     .tchr{grid-area: te;}
     .show{grid-area: sa;}
+
+    .summary{
+        display: grid;
+        grid-template-areas: 
+        'li1 li2'
+        ;
+        border: 2px solid black;
+    }
+
+    .coursesSummary{
+        grid-area: li1;
+    }
+
+    .pointsSummary{
+        margin-top: 27px;
+        grid-area: li2;
+    }
+
+    .coursesSummary li{
+        margin: 10px;
+    }
+
+    .pointsSummary li{
+        margin: 10px;
+    }
+
+
+
+
+    .month{
+        padding: 30px;
+        background: #688691;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    .month ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .month ul li{
+        color: black;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .month .prev{
+        float: left;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .month .next{
+        float: right;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .weekdays{
+        margin: 0;
+        padding: 10px 0;
+        background-color:lightblue;
+        border: 2px black solid;
+      }
+      
+      .weekdays li{
+        display: inline-block;
+        width: 13.6%;
+        color: black;
+        text-align: center;
+      }
+
+      .date{
+        padding: 10px 0;
+        background: #A5B6BB;
+        margin: 0;
+        border: 2px solid black;
+      }
+
+      .date li{
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+        font-size: 15px;
+      }
+
+      .days li .active {
+        padding: 5px;
+        background: #1abc9c;
+        color: white !important
+      }
+
+      
+      .calendarInfo{
+        display: grid;
+        grid-template-areas:
+        'CD'
+        'CA'
+        ;
+        margin-top: 10px;
+        grid-template-columns: 99.5%;
+      }
+
+      .calendarDay{
+        grid-area: CD;
+        display: grid;
+        grid-template-areas: 
+        'les tim'
+        ;
+        border: 2px solid black;
+        width: 100%;
+      }
+
+      .dailyLessons{
+        grid-area: les;
+      }
+
+      .dailyLessons li{
+        margin-bottom: 5px;
+      }
+
+      .lessonsTime{
+        grid-area: tim;
+        margin-top: 75px;
+      }
+
+      .lessonsTime li{
+        margin-bottom: 5px;
+      }
+
+      .currentAssignments{
+        grid-area: CA;
+        display: grid;
+        grid-template-areas:
+        'ass sub'
+        ;
+        width: 100%;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+
+      .assignments{
+        grid-area: ass;
+      }
+
+      .assignments li{
+        margin-bottom: 5px;
+      }
+
+      .submissions{
+        grid-area: sub;
+      }
+
+      .submissions li{
+        margin-bottom: 5px;
+      }
 }
 
 @media screen and (min-width: 767px){
@@ -459,6 +618,7 @@ ul {
         grid-template-areas: 
         'co pts te sa'
         ;
+        grid-template-columns: 22% 20% 32% 26%;
     }
 
     .crs{grid-area: co;}
@@ -466,10 +626,31 @@ ul {
     .tchr{grid-area: te;}
     .show{grid-area: sa;}
 
-
-    .calendar{
-
+    .summary{
+        display: grid;
+        grid-template-areas: 
+        'li1 li2'
+        ;
+        border: 2px solid black;
     }
+
+    .coursesSummary{
+        grid-area: li1;
+    }
+
+    .pointsSummary{
+        margin-top: 27px;
+        grid-area: li2;
+    }
+
+    .coursesSummary li{
+        margin: 10px;
+    }
+
+    .pointsSummary li{
+        margin: 10px;
+    }
+
 
     .month{
         padding: 30px;
@@ -534,5 +715,69 @@ ul {
         padding: 5px;
         background: #1abc9c;
         color: white !important
+      }
+
+
+      .calendarInfo{
+        display: grid;
+        grid-template-areas:
+        'CD CA'
+        ;
+        margin-top: 10px;
+        grid-template-columns: 48.925vw 48.925vw;
+      }
+
+      .calendarDay{
+        grid-area: CD;
+        display: grid;
+        grid-template-areas: 
+        'les tim'
+        ;
+        border: 2px solid black;
+        width: 100%;
+      }
+
+      .dailyLessons{
+        grid-area: les;
+      }
+
+      .dailyLessons li{
+        margin-bottom: 5px;
+      }
+
+      .lessonsTime{
+        grid-area: tim;
+        margin-top: 75px;
+      }
+
+      .lessonsTime li{
+        margin-bottom: 5px;
+      }
+
+      .currentAssignments{
+        grid-area: CA;
+        display: grid;
+        grid-template-areas:
+        'ass sub'
+        ;
+        width: 100%;
+        border: 2px solid black;
+        margin-left: 1vw;
+      }
+
+      .assignments{
+        grid-area: ass;
+      }
+
+      .assignments li{
+        margin-bottom: 5px;
+      }
+
+      .submissions{
+        grid-area: sub;
+      }
+
+      .submissions li{
+        margin-bottom: 5px;
       }
 }
