@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+li{
+  font-family: "Garamond"; 
+}
+
+p{
+    font-family: "Garamond";
+}
+
+h1{
+    font-family: "Merriweather";
+    font-style: bold;
+}
+
+h3{
+    font-family: "Merriweather";
+    font-style: bold;
+}
+
 .menu{
     height: 100vh;
     width: 20vw;
@@ -10,10 +31,24 @@
     z-index: 10;
 }
 
+.menu ul li h3{
+    margin-bottom: 100px;
+    border: 2px solid black;
+    background-color: lightblue;
+    width: 90%;
+    margin-left: -7%;
+}
+
+.menu ul li .logo{
+    border: none;
+    width: 130%;
+    margin-left: -25%;
+    background-color: none;
+}
+
 .menu-button{
     cursor: pointer;
     display: inline;
-    border-bottom: 2px solid black;
 }
 
 .menu-button i.material-icons{
@@ -44,6 +79,10 @@ ul {
 }
 
 @media screen and (max-width: 767px){
+    .menu{
+        width: 40vw;
+    }
+
     .outerGrid1{
         gap: 10px;
         display: grid;
@@ -283,9 +322,6 @@ ul {
         margin: 10px;
     }
 
-
-
-
     .month{
         padding: 30px;
         background: #688691;
@@ -424,7 +460,7 @@ ul {
         'UP'
         ;
         border: 2px solid black;
-        background-color: lightblue;
+        background-color: #688691;
     }
 
     .todaySchedule{
@@ -435,6 +471,7 @@ ul {
         grid-template-areas: 
         'DL2 LT2'
         ;
+        background-color: lightblue;
     }
 
     .dailyLessons2{
@@ -462,6 +499,7 @@ ul {
         grid-template-areas: 
         'NC NT'
         ;
+        background-color: lightblue;
     }
 
     .notificationCourse{
@@ -489,6 +527,7 @@ ul {
         grid-template-areas:
         'USI'
         ;
+        background-color: lightblue;
     }
 
     .userInfo{
