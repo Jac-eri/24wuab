@@ -11,12 +11,12 @@ p{
 
 h1{
     font-family: "Merriweather";
-    font-style: bold;
+    font-weight: bold;
 }
 
 h3{
     font-family: "Merriweather";
-    font-style: bold;
+    font-weight: bold;
 }
 
 .menu{
@@ -40,10 +40,8 @@ h3{
 }
 
 .menu ul li .logo{
-    border: none;
     width: 130%;
     margin-left: -25%;
-    background-color: none;
 }
 
 .menu-button{
@@ -109,7 +107,6 @@ ul {
 
     .title{
         grid-area: ti;
-        background-color: none;
         border: 1px black solid;
         padding: 5px;
         margin: 10px
@@ -273,16 +270,7 @@ ul {
         ;
     }
 
-    #course1{grid-area: c1;}
-    #course2{grid-area: c2;}
-    #course3{grid-area: c3;}
-    #course4{grid-area: c4;}
-    #course5{grid-area: c5;}
-    #course6{grid-area: c6;}
-    #course7{grid-area: c7;}
-    #course8{grid-area: c8;}
-    #course9{grid-area: c9;}
-    #course10{grid-area: c10;}
+    .course1{grid-area: c1;}
 
     .courses3{
         display: grid;
@@ -564,7 +552,6 @@ ul {
 
     .title{
         grid-area: ti;
-        background-color: none;
         border: 1px black solid;
         padding: 5px;
         margin: 10px
@@ -725,16 +712,7 @@ ul {
         ;
     }
 
-    #course1{grid-area: c1;}
-    #course2{grid-area: c2;}
-    #course3{grid-area: c3;}
-    #course4{grid-area: c4;}
-    #course5{grid-area: c5;}
-    #course6{grid-area: c6;}
-    #course7{grid-area: c7;}
-    #course8{grid-area: c8;}
-    #course9{grid-area: c9;}
-    #course10{grid-area: c10;}
+    .course1{grid-area: c1;}
 
     .courses3{
         display: grid;
